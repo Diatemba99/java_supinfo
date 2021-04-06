@@ -47,9 +47,15 @@ public class TestSeanceFormation {
         tabSeances[2] = seanceFormation3;
 
 
-
-
-    }
+        salleFormation1.setSeanceFormation(tabSeances);
+        //Affichage des elements
+        System.out.println("Les Salles de Formations:");
+        System.out.println(salleFormation1);
+        System.out.println("Les seances de Formations");
+        for (seanceFormation seance: tabSeances)
+        {
+            System.out.println(seance);
+        }
 }
 
 

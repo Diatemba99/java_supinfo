@@ -10,7 +10,7 @@ public class TestSeanceFormation {
         module1.setNom("JAVA POO");
         module1.setVolumeHoraire(20);
         module1.setcoef(1);
-        
+
 
         SalleFormation salleFormation1 = new SalleFormatiion();
         salleFormation1.setId(1);

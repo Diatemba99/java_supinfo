@@ -5,6 +5,13 @@ public class TestSeanceFormation {
 
     public static void  main(string [] args)
     {
+        Module module1 = new  Module();
+        module1.setId(1);
+        module1.setNom("JAVA POO");
+        module1.setVolumeHoraire(20);
+        module1.setcoef(1);
+        
+
         SalleFormation salleFormation1 = new SalleFormatiion();
         salleFormation1.setId(1);
         salleFormation1.setNom("Blue-Ray");
@@ -52,7 +59,7 @@ public class TestSeanceFormation {
         System.out.println("Les Salles de Formations:");
         System.out.println(salleFormation1);
         System.out.println("Les seances de Formations");
-        for (seanceFormation seance: tabSeances)
+        for (SeanceFormation seance: tabSeances)
         {
             System.out.println(seance);
         }

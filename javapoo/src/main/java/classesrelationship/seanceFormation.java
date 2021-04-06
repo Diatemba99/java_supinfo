@@ -15,14 +15,24 @@ public class seanceFormation {
     private String heureFin ;
     private salleFormation salleFormation;
 
+    public Module getModule() {
+        return module;
+    }
+
+    public void setModule(Module module) {
+        this.module = module;
+    }
+
+    private Module module;
+
     seanceFormation() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
-    public String toString() {
-        return "seanceFormation{" + "date=" + date + ", heureDebut=" + heureDebut + ", heureFin=" + heureFin + ", salleFormation=" + salleFormation + '}';
-    }
+    //@Override
+    //public String toString() {
+  //      return "seanceFormation{" + "date=" + date + ", heureDebut=" + heureDebut + ", heureFin=" + heureFin + ", salleFormation=" + salleFormation + '}';
+//    }
 
     public seanceFormation(String date, String heureDebut, String heureFin, salleFormation salleFormation) {
         this.date = date;
@@ -86,5 +96,15 @@ public class seanceFormation {
     public void setSalleFormation(salleFormation salleFormation) {
         this.salleFormation = salleFormation;
     }
-   
+
+    @Override
+    public String toString() {
+        return "seanceFormation{" +
+                "date='" + date + '\'' +
+                ", heureDebut='" + heureDebut + '\'' +
+                ", heureFin='" + heureFin + '\'' +
+                ", salleFormation=" + salleFormation +
+                ", module=" + module +
+                '}';
+    }
 }

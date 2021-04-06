@@ -3,6 +3,8 @@ package com.supinfo.javapoo;
 import com.supinfo.javapoo.Module;
 
 public class Module {
+
+    private int id;
     private String nom;
     private String volume_horaire;
     private int coef;
@@ -11,7 +13,8 @@ public class Module {
     public Module() {
     }
 
-    public Module(String nom,String volume_horaire,int coef,String description) {
+    public Module(int id, String nom,String volume_horaire,int coef,String description) {
+        this.id=id;
         this.nom=nom;
         this.volume_horaire=volume_horaire;
         this.coef=coef;
@@ -23,6 +26,13 @@ public class Module {
         System.out.println("Bonjour ");
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNom() {
         return this.nom;
